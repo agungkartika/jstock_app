@@ -13,19 +13,6 @@ import 'package:jstock/ui/screen/dashboard/dashboard_screen.dart';
 class AppPages {
   AppPages._();
 
-// Widget build(BuildContext context) {
-//     return GetMaterialApp(
-//       initialRoute: "/login",
-//       getPages: [
-//         GetPage(name: "/login", page: () => LoginScreen()),
-//         GetPage(
-//           name: "/",
-//           page: () => ResponsiveLayout(content: DashboardScreen()),
-//           bindings: [DashboardBinding()],
-//         ),
-//       ],
-//     );
-//   }
   static final routes = [
     GetPage(name: "/login", page: () => LoginScreen()),
     GetPage(
@@ -77,13 +64,5 @@ class AppPages {
         return LoginScreen();
       },
     ),
-
-    // GetPage(
-    //   name: "/",
-    //   page: () => DashboardPage(),
-    //   bindings: [
-    //     OverviewBinding(),
-    //   ],
-    // ),
   ];
 }
